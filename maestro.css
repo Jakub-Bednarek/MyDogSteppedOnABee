@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url("łonka.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(85, 30, 4);
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+.flex-wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+    padding-bottom: 1em;
+} */
+
+.smaller-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+p {
+    margin: 1.5rem;
+}
+
+.story {
+    max-width: 500px;
+    text-align: justify;
+}
+
+.important {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    font-size: 1rem;
+    padding: 0.8rem 2.6rem;
+    border-radius: 0.25rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    border: none;
+    background-image: linear-gradient(to right top, #e2f106, #e9e833, #ede04b, #eed85e, #edd170, #edce74, #edca78, #ecc77c, #efc575, #f3c36d, #f7c066, #fbbe5f);
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    border-radius: 0.25rem;
+}
+
+.Bee {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 1.5rem;
+}
+
+
+/* Footer */
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container ul {
+    display: flex;
+}
+
+.footer-container ul li {
+    padding-right: 1rem;
+}
+
+.dev {
+    text-align: center;
+    color: white;
+}
+
+
+/* Wild Bees */
+
+.wild-bee_1 {
+    position: absolute;
+    left: 0;
+}
+
+.wild-bee_2 {
+    position: absolute;
+    right: 0;
+}
+
+.wild-bee_3 {
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.wild-bee_4 {
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
