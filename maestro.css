@@ -1,3 +1,5 @@
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,9 +8,9 @@
 
 html {
     margin: 0;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
-    background-image: url("łonka.jpg");
+    background-image: url("photos/łonka.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -18,6 +20,7 @@ html {
 body {
     width: 100%;
     height: 100%;
+    font-size: 1.5rem;
     font-family: "Poppins", sans-serif;
 }
 
@@ -48,7 +51,7 @@ p {
 }
 
 .story {
-    max-width: 500px;
+    max-width: 700px;
     text-align: justify;
 }
 
@@ -60,26 +63,29 @@ p {
 }
 
 button {
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 0.8rem 2.6rem;
     border-radius: 0.25rem;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     border: none;
+    cursor: pointer;
     background-image: linear-gradient(to right top, #e2f106, #e9e833, #ede04b, #eed85e, #edd170, #edce74, #edca78, #ecc77c, #efc575, #f3c36d, #f7c066, #fbbe5f);
 }
 
 img {
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 100px;
     border-radius: 0.25rem;
+    
 }
 
 .Bee {
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
     margin: 1.5rem;
+    
 }
 
 
@@ -91,11 +97,12 @@ img {
     align-items: center;
 }
 
-.footer-container ul {
+.footer-container ol {
     display: flex;
+    list-style: none;
 }
 
-.footer-container ul li {
+.footer-container ol li {
     padding-right: 1rem;
 }
 
@@ -109,22 +116,113 @@ img {
 
 .wild-bee_1 {
     position: absolute;
-    left: 0;
+    left: 10%;
 }
 
 .wild-bee_2 {
     position: absolute;
-    right: 0;
+    right: 10%;
 }
 
 .wild-bee_3 {
     position: absolute;
     left: 0;
     top: 50%;
+    
 }
 
 .wild-bee_4 {
     position: absolute;
     right: 0;
     top: 50%;
+    
+}
+
+.oneline {
+    display: inline;
+}
+
+#NFT {
+    font-family: 'Staatliches', cursive;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .Bee {
+      height:150px;
+      width: 150px;
+    }
+    .wild-bee_3 {
+        position: absolute;
+        left: 0;
+        top: 40%;
+    }
+    
+    .wild-bee_4 {
+        position: absolute;
+        right: 0;
+        top: 40%;
+
+  }
+
+  img {
+    height: 75px;
+    width: 75px;
+    border-radius: 0.25rem;
+}
+    
+}
+
+
+  @media screen and (max-width: 1050px) {
+    .Bee {
+      height:100px;
+      width: 100px;
+    }
+
+    .wild-bee_3 {
+        position: absolute;
+        left: 0;
+        top: 50%;
+    }
+    
+    .wild-bee_4 {
+        position: absolute;
+        right: 0;
+        top: 50%;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+
+    img {
+        height: 70px;
+        width: 70px;
+        border-radius: 0.25rem;
+        
+    }
+
+    .dev {
+        font-size: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .Bee {
+      height:100px;
+      width: 100px;
+    }
+
+    .wild-bee_3 {
+        position: absolute;
+        left: 0;
+        top: 80%;
+    }
+    
+    .wild-bee_4 {
+        position: absolute;
+        right: 0;
+        top: 80%;
+    }
 }
