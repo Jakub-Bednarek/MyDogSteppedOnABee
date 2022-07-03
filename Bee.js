@@ -1,4 +1,4 @@
-const countEl = document.getElementById('counter');
+const imputEl = document.getElementById('myText');
 const claimEl = document.getElementById('giveBee');
 const yourBee = document.getElementById('add');
 const takeAwayBee = document.getElementById('take away');
@@ -9,14 +9,14 @@ var accountAddress = null;
 var blockActions = true;
 
 document.getElementById("take away").disabled = true;
-countEl.textContent= 0;
+imputEl.value = 0;
 
 // FUNCTIONS
 
 function addBee() {
-    console.log(countEl);
+    console.log(imputEl);
     count += 1;
-    countEl.textContent = count;
+    imputEl.value = count;
     document.getElementById("take away").disabled = false;
     if (count > 1){
         document.getElementById("add").disabled = true;
@@ -25,9 +25,9 @@ function addBee() {
 }
 
 function takeawayBee() {
-    console.log(countEl);
+    console.log(imputEl);
     count -= 1;
-    countEl.textContent = count;
+    imputEl.value = count;
     document.getElementById("add").disabled = false;
     if (count < 1){
         document.getElementById("take away").disabled = true;
